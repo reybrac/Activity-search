@@ -22,7 +22,7 @@ app.get("/active/:city", (req, res) => {
 
   axios
     .get(
-      `https://api.amp.active.com/v2/search/?city=${req.params.city}&state=CA&current_page=1&per_page=200&sort=distance&query=running&exclude_children=false&api_key=2ts6ryqrzkb8ccq9ay7wnurq`
+      `https://api.amp.active.com/v2/search/?city=${req.params.city}&state=CA&radius=50*current_page=1&per_page=200&sort=distance&registerable_only=true&query=running&exclude_children=true&api_key=2ts6ryqrzkb8ccq9ay7wnurq`
     )
     .then((body) => {
       // console.log(body.data);
