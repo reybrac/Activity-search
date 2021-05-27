@@ -1,7 +1,7 @@
 {
-  "name": "API-test",
+  "name": "Activity-search",
   "version": "1.0.0",
-  "description": "",
+  "description": "local activity search",
   "main": "server.js",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
